@@ -45,9 +45,7 @@ export default function GamePage() {
           <Text size="100px">
             {points} / {actualGame.points}
           </Text>
-          <Text size="30px">
-            Congrats!
-          </Text>
+          {win ? <Text size="30px">Congrats!</Text> : null}
         </div>
         <div
           style={{
